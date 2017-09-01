@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Hotels</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+<div class="container">
+<nav class="main-navigation">
+<ul class="clearfix">
+<li class="nav-for-left"><a href="index.html">Информация</a></li>
+<li class="nav-for-left"><a href="#">Фото и видео</a></li>
+  <li class="logo"><a href="index.html"><img src="img/logo.png" width="67" height="56" alt=""></a></li>
+<li class="nav-for-right"><a href="#">Карта штата</a></li>
+<li class="nav-for-right"><a href="#" class="active">Гостиницы</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main class="container">
+
+
+<form class="form-hotels clearfix">
+<div class="inf">
+<h2>Инфраструктура:</h2>
+<label class="checkbox-custom"><input class="checkbox" id="pool-field" type="checkbox" name="pool"><span class="checkbox-indicator"></span>Бассейн</label>
+<label class="checkbox-custom"><input class="checkbox" id="park-field" type="checkbox" name="park" checked><span class="checkbox-indicator"></span>Парковка</label>
+<label class="checkbox-custom"><input class="checkbox" id="wifi-field" type="checkbox" name="wifi" checked><span class="checkbox-indicator"></span>Wi-Fi</label>
+</div>
+<div class="type">
+<h2>Тип жилья:</h2>
+<label class="checkbox-custom"><input class="checkbox" id="host-field" type="checkbox" name="host" checked><span class="checkbox-indicator"></span>Гостиница</label>
+<label class="checkbox-custom"><input class="checkbox" id="mot-field" type="checkbox" name="mot"><span class="checkbox-indicator"></span>Мотель</label>
+<label class="checkbox-custom"><input class="checkbox" id="apart-field" type="checkbox" name="apart"><span class="checkbox-indicator"></span>Апартаменты</label>
+</div>
+<div class="price">
+<h2>Стоимость в сутки (Р):</h2>
+<table>
+<tr>
+<td>От 0</td>
+<td>От 3000</td>
+</tr>
+</table>
+<input type="range">
+<input type="button" value="Показать">
+</div>
+</form>
+
+
+<section class="result">
+<h3>Найдено: 3</h3>
+
+<h4>Сортировка:</h4>
+<ul>
+<li><a href="#" class="sort-price sort-active">По цене</a></li>
+<li><a href="#" class="sort-type">По типу</a></li>
+<li><a href="#" class="sort-rat">По рейтингу</a></li>
+</ul>
+
+<a href="#" class="arup"><</a>
+<a href="#" class="ardwn ardwn-active">></a>
+</section>
+
+<ul class="offers">
+<li class="clearfix">
+  <div class="left clearfix">
+  <div class="ava">
+<img src="img/amara.jpg" width="135" height="90" alt="">
+</div>
+<h2>AMARA RESORT & SPA</h2>
+
+<span class="typeoff">Гостиница</span>
+<span class="priceoff">От 3500 Р.</span>
+
+<div class="reserv-btns">
+<a class="btn-more" href="#">Подробнее</a>
+<a class="btn-reserv" href="#">Забронировать</a>
+</div>
+</div>
+
+<div class="rat">
+<div class="stars stars-four">
+1234
+</div>
+<p>Рейтинг 8,5</p>
+</div>
+</li>
+<li class="clearfix">
+  <div class="left clearfix">
+  <div class="ava">
+<img src="img/desert.jpg" width="135" height="90" alt="">
+</div>
+  <h2>Desert quail inn</h2>
+
+  <span class="typeoff">Мотель</span>
+  <span class="priceoff">От 2000 Р.</span>
+
+  <div class="reserv-btns">
+  <a class="btn-more" href="#">Подробнее</a>
+  <a class="btn-reserv" href="#">Забронировать</a>
+</div>
+</div>
+
+  <div class="rat">
+  <div class="stars stars-two">
+12
+  </div>
+  <p>Рейтинг 8,9</p>
+  </div>
+</li>
+<li class="clearfix">
+  <div class="left clearfix">
+  <div class="ava">
+<img src="img/villias.jpg" width="135" height="90" alt="">
+</div>
+  <h2>Villas at poco diablo</h2>
+
+  <span class="typeoff">Апартаменты</span>
+  <span class="priceoff">От 4000 Р.</span>
+
+  <div class="reserv-btns">
+  <a class="btn-more" href="#">Подробнее</a>
+  <a class="btn-reserv" href="#">Забронировать</a>
+  </div>
+</div>
+
+  <div class="rat">
+  <div class="stars stars-three">
+123
+  </div>
+  <p>Рейтинг 9,2</p>
+  </div>
+</li>
+</ul>
+</main>
+<footer class="container clearfix">
+<div class="tag">
+<a href="#">#visitsedona</a>
+</div>
+
+<div class="social">
+<a class="social-btn tw" href="#">tw</a>
+<a class="social-btn fb" href="#">fb</a>
+<a class="social-btn yt" href="#">yt</a>
+</div>
+
+<div class="cprght">
+<p>website by</p>
+<a class="cprght-btn" href="#">html academy</a>
+</div>
+</footer>
+
+<script>
+var link = document.querySelector (".active");
+var arup = document.querySelector (".arup");
+var ardwn = document.querySelector (".ardwn");
+var sortPrice = document.querySelector (".sort-price");
+var sortType = document.querySelector (".sort-type");
+var sortRat = document.querySelector (".sort-rat");
+
+link.addEventListener ("click", function(event) {
+  event.preventDefault();
+})
+
+arup.addEventListener ("click", function(event) {
+  event.preventDefault();
+  arup.classList.add("arup-active");
+  ardwn.classList.remove("ardwn-active");
+})
+ardwn.addEventListener ("click", function(event) {
+  event.preventDefault();
+  ardwn.classList.add("ardwn-active");
+  arup.classList.remove("arup-active");
+})
+
+sortPrice.addEventListener ("click", function(event) {
+  event.preventDefault();
+  sortPrice.classList.add("sort-active");
+  sortType.classList.remove("sort-active");
+  sortRat.classList.remove("sort-active");
+})
+sortType.addEventListener ("click", function(event) {
+  event.preventDefault();
+  sortType.classList.add("sort-active");
+  sortPrice.classList.remove("sort-active");
+  sortRat.classList.remove("sort-active");
+})
+sortRat.addEventListener ("click", function(event) {
+  event.preventDefault();
+  sortRat.classList.add("sort-active");
+  sortPrice.classList.remove("sort-active");
+  sortType.classList.remove("sort-active");
+})
+</script>
+
+</body>
+</html>
