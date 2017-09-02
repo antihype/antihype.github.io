@@ -156,6 +156,14 @@ input {
 .social:hover {
     text-decoration: underline #fff;
 }
+.social-mail:hover {
+	text-decoration: none;
+	cursor: default;
+}
+.social-phone:hover {
+	text-decoration: none;
+	cursor: default;
+}
 .side-controls label {
   position: absolute;
   top: 0;
