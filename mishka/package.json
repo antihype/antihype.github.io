@@ -1,0 +1,23 @@
+{
+  "name": "antihype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antihype/Mishka.git"
+  },
+  "author": "Antihype",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antihype/Mishka/issues"
+  },
+  "homepage": "https://github.com/antihype/Mishka#readme",
+  "devDependencies": {
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
