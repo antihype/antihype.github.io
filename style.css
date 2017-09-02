@@ -164,6 +164,14 @@ input {
 	text-decoration: none;
 	cursor: default;
 }
+.social-mail b:hover {
+	text-decoration: none;
+	cursor: default;
+}
+.social-phone b:hover {
+	text-decoration: none;
+	cursor: default;
+}
 .side-controls label {
   position: absolute;
   top: 0;
