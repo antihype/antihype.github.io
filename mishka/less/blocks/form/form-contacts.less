@@ -1,0 +1,78 @@
+.form__contacts {
+    padding: 0 30px;
+    margin-bottom: 70px;
+  }
+
+  .form__contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 18px;
+    padding-right: 39px;
+    box-sizing: border-box;
+
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    transition: border-color .2s;
+    &:hover {
+      border-bottom: 2px solid #62d1ba;
+    }
+    &:focus {
+      border-bottom: 2px solid #62d1ba;
+    }
+    &:invalid {
+      border-bottom: 2px solid #f0b1b1;
+    }
+  }
+  .form__contact--phone {
+    background: url("../img/phone.png") no-repeat 98% -2px;
+    transition: background-image .2s;
+    &:hover {
+      background: url("../img/phone-hvr.png") no-repeat 98% -2px;
+    }
+    &:focus {
+      background: url("../img/phone-hvr.png") no-repeat 98% -2px;
+  }
+}
+  .form__contact--mail {
+    background: url("../img/mail.png") no-repeat 98% -1px;
+    transition: background-image .2s;
+    &:hover {
+      background: url("../img/mail-hvr.png") no-repeat 98% -1px;
+    }
+    &:focus {
+      background: url("../img/mail-hvr.png") no-repeat 98% -1px;
+  }
+  }
+  
+
+  @media @tablet-widths {
+    .form__contacts {
+      padding: 70px 50px;
+      background: #f1f1f1;
+    }
+    .form__contacts-contact {
+      display: flex;
+    }
+    .form__contacts-contact .form__par {
+      width: 90px;
+      margin-right: 28%;
+      white-space: nowrap;
+    }
+  }
+
+  @media @desktop-widths {
+    .form__contacts {
+      padding: 70px 110px;
+    }
+    .form__contact {
+      width: 70%;
+    }
+    .form__contacts-contact .form__par {
+      width: 90px;
+      margin-right: 7%;
+      white-space: nowrap;
+    }
+  }

@@ -1,0 +1,128 @@
+.reviews {
+  .container();
+  position: relative;
+  margin-bottom: 45px;
+  }
+
+
+.reviews__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.reviews_review p {
+  margin: 0;
+  padding: 0;
+}
+.reviews__review {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__author {
+  margin-bottom: 35px;
+}
+
+.review__author--name {
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: bold;
+}
+.review__author--mail {
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+
+.review__buttons {
+  .clearfix();
+  margin-bottom: 40px;
+}
+.reviews__toggle {
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 64px;
+  font-size: 0;
+  outline: none;
+  border: 1px solid #ececec;
+  cursor: pointer;
+  &--prev {
+   background: #fff url("../img/arrow.png") no-repeat center;
+  }
+  &--next {
+   background: #fff url("../img/arrow.png") no-repeat center;
+   transform: rotate(180deg);
+  }
+  &:hover {
+    background: #fff url("../img/arrow-hvr.png") no-repeat center;
+  }
+  &:active {
+    background: #fff url("../img/arrow-active.png") no-repeat center;
+  }
+}
+
+.reviews__action {
+  display: block;
+  padding: 15px 0;
+  border: 2px solid #444444;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #444444;
+  transition: background-color .4s,
+              color .4s,
+              opacity .4s;
+  &:hover {
+   background: #444444;
+   color: #fff;
+  }
+  &:active {
+    background: #444444;
+  color: #fff;
+  opacity: .3;
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    padding: 80px 50px;
+  padding-bottom: 95px;
+    position: relative;
+  background: url("../img/review.jpg") no-repeat left;
+  }
+  .reviews__heading {
+  margin-bottom: 100px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+  .review__buttons {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    margin-bottom: 0;
+  }
+  .reviews__action {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 170px;
+  }
+}
+
+@media @desktop-widths {
+
+ .reviews {
+   padding-left: 245px;
+    font-size: 50px;
+ }
+
+}

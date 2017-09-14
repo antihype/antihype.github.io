@@ -1,0 +1,57 @@
+.form__type {
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+
+.form__par {
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  margin-bottom: 37px;
+
+  font-size: 16px;
+  line-height: 16px;
+  color: #63d1bb;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    height: 1px;
+    width: 75%;
+    background-color: #62d1ba;
+    
+  }
+}
+
+@media @tablet-widths {
+  .form__type {
+    display: flex;
+    padding: 0 50px;
+    margin-bottom: 70px;
+  }
+  .form__par {
+    margin-right: 30%;
+    &::after {
+      display: none;
+    }
+  }
+  .form__type .form__par {
+  }
+  .form__type .form__labels {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+@media @desktop-widths {
+  .form__type {
+    padding-left: 110px;
+    margin-bottom: 65px;
+  }
+  .form__par {
+    margin-right: 10%;
+  }
+}

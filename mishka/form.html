@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+    <title>Mishka</title>
+
+  </head>
+    <body>
+
+    <header class="page-header">
+<a href="index.html"> <div class="page-header__logo"><picture>
+  <source media="(min-width: 1150px)"
+      srcset="img/mishka-logo-desktop.png">
+	  <source media="(min-width: 768px)"
+      srcset="img/mishka-logo-tablet.png">
+    <img src="img/mishka-logo-mobile.png"alt="logo">
+	</picture>
+  </div></a>
+
+    <nav class="main-nav main-nav--closed">
+  <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__items">
+      <li class="main-nav__item"><a href="goods.html">Каталог товаров</a></li>
+      <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+    </ul>
+    <ul class="main-nav__items--hidden">
+      <li class="main-nav__item main-nav__item--hidden"><a href="#">Новые поступления</a></li>
+      <li class="main-nav__item main-nav__item--hidden"><a href="#">Распродажа</a></li>
+
+    </ul>
+    <ul class="main-nav__user-block">
+      <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+      <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: <span>пока пуста</span></a></li>
+    </ul>
+    <small class="main-nav__delivery">Бесплатная доставка по России</small>
+    </nav>
+    </header>
+	<main class="form">
+    <h1 class="form__title">
+      Вязание на заказ
+    </h1>
+    <p class="form__slogan">
+     Мы будем рады воплотить в жизнь ваши пожелания!<br>
+     Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+    </p>
+     
+     <form class="form__app">
+
+      <section class="form__type">
+       <h2 class="form__par">
+          Тип
+       </h2>
+
+       <div class="form__labels">
+
+       <label class="form__label form__label--radio">
+       <input class="form__radio-custom" type="radio" value="acc" name="type">Аксессуар для интерьера<span class="radio-indicator"></span>
+       </label>
+
+       <label class="form__label form__label--radio">
+       <input class="form__radio-custom" type="radio" value="toy" name="type">Детская игрушка<span class="radio-indicator"></span>
+       </label>
+       
+       </div>
+      </section>
+
+      <section class="form__color">
+       <h2 class="form__par">
+          Цвет
+       </h2>
+       <div class="form__labels">
+       <label class="form__label form__label--checkbox">
+       <input class="form__checkbox-custom" type="checkbox" value="white">Белый<span class="checkbox-indicator"></span>
+       </label>
+
+       <label class="form__label form__label--checkbox">
+       <input class="form__checkbox-custom" type="checkbox" value="gray">Серый<span class="checkbox-indicator"></span>
+       </label>
+
+       <label class="form__label form__label--checkbox">
+       <input class="form__checkbox-custom" type="checkbox" value="tiff">Тиффани<span class="checkbox-indicator"></span>
+       </label>
+
+       <label class="form__label form__label--checkbox">
+       <input class="form__checkbox-custom" type="checkbox" value="black">Черный<span class="checkbox-indicator"></span>
+       </label>
+
+       <label class="form__label form__label--checkbox">
+       <input class="form__checkbox-custom" type="checkbox" value="pink">Розовый<span class="checkbox-indicator"></span>
+       </label>
+
+       <label class="form__label form__label--checkbox">
+       <input class="form__checkbox-custom" type="checkbox" value="orange">Оранжевый<span class="checkbox-indicator"></span>
+       </label>
+       </div>
+      </section>
+
+      <section class="form__username">
+       <h2 class="form__par">
+          ФИО
+       </h2>
+       <div class="form__labels">
+       <label class="form__label form__label__username">
+       <b class="form__contacts-title">Фамилия:</b> <input class="form__text" type="text" placeholder="Укажите фамилию">
+       </label>
+
+       <label class="form__label form__label__username">
+       <b class="form__contacts-title">Имя:</b> <input class="form__text" type="text" placeholder="Введите имя">
+       </label>
+
+       <label class="form__label form__label__username">
+       <b class="form__contacts-title">Отчество:</b> <input class="form__text" type="text" placeholder="Отчество, если желаете">
+       </label>
+       </div>
+      </section>
+
+      <section class="form__contacts">
+      <div class="form__contacts-contact">
+      <h2 class="form__par">ТЕЛ</h2>
+      <input class="form__contact form__contact--phone" type="text" placeholder="+7 XXX XX XX">
+      </div>
+
+      <div class="form__contacts-contact">
+      <h2 class="form__par">E-MAIL</h2>
+      <input class="form__contact form__contact--mail" type="text" placeholder="Мы не будем спамить, честно">
+      </div>
+      </section>
+
+      <section class="form__textarea">
+       <h2 class="form__par">
+          ДОП
+       </h2>
+       <textarea class="form__field" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </section>
+      
+      <section class="form__submit">
+      <input class="form__btn" type="submit" value="Отправить заказ">
+
+      <article class="form__postfix">
+      Все поля являются обязательными
+      </article>
+      </section>
+
+
+     </form>
+   
+  </main>
+	
+	
+	<footer class="page-footer">
+     <a href="index.html"><section class="page-footer__section  page-footer__section--link">
+      
+     </section></a>
+
+     <section class="page-footer__section  page-footer__section--social">
+      <a href="#" class="page-footer__icon page-footer__icon--inst">inst</a>
+      <a href="#" class="page-footer__icon page-footer__icon--fb">fb</a>
+      <a href="#" class="page-footer__icon page-footer__icon--tw">tw</a>
+     </section>
+
+     <section class="page-footer__section  page-footer__section--cprght">
+      <a href="https://htmlacademy.ru/" class="page-footer__cprght"><span>Разработано</span><img src="img/htmlacademy.png" alt="htmlacademy" width="27" height ="34"></a>
+     </section>
+
+    </footer>
+    <script>
+      var btn = document.querySelector(".main-nav__toggle");
+      var nav = document.querySelector(".main-nav");
+
+      btn.addEventListener("click", function() {
+        if (nav.classList.contains("main-nav--closed")) {
+          nav.classList.remove("main-nav--closed");
+          nav.classList.add("main-nav--opened");
+        } else {
+          nav.classList.add("main-nav--closed");
+          nav.classList.remove("main-nav--opened");
+        }
+
+      });
+    </script>
+    </body>
+</html>

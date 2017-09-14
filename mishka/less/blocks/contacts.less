@@ -1,0 +1,160 @@
+.contacts {
+ padding-top: 45px;
+ background: #ffffff url("../img/zigzag-line-desktop.png") repeat-x top;
+}
+.contacts__heading {
+  margin-bottom: 40px;
+  padding-left: 30px;
+  font-size: 24px;
+  line-height: 30px;
+
+}
+
+.contacts__mail,
+.contacts__adds {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+.contacts__mail a,
+.contacts__adds span {
+  margin-left: 30px;
+}
+.contacts__map {
+  width: 100%;
+  height: 460px;
+  margin-bottom: 40px;
+  background: url("../img/map-tablet.jpg") no-repeat center top;
+}
+.contacts__mail a {
+  position: relative;
+  text-decoration: none;
+  color: #444444;
+  transition: color .3s,
+              opacity .3s;
+  &::after {
+   content: "";
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   height: 1px;
+   width: 150px;
+   background: #62d1ba;
+  }
+  &:hover {
+   color: #62d1ba;
+  }
+  &:active {
+   opacity: .3;
+  }
+}
+
+.contacts__adds span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contacts__btn {
+  display: block;
+  margin: 0 30px;
+  padding: 15px 0;
+  border: 2px solid #444444;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #444444;
+  transition: background-color .4s,
+              color .4s,
+              opacity .4s;
+  &:hover {
+   background: #444444;
+   color: #fff;
+  }
+  &:active {
+    background: #444444;
+  color: #fff;
+  opacity: .3;
+  }
+}
+
+@media @tablet-widths {
+  .contacts {
+   background: #ffffff url("../img/zigzag-line-desktop-tablet.png") repeat-x top;
+}
+   .contacts__heading {
+   position: relative;
+   margin-left: 50px;
+   font-size: 40px;
+   line-height: 50px;
+   &::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 80%;
+   width: 47px;
+   height: 81px;
+   background: url("../img/flag.png") no-repeat center;
+    }
+   }
+  .contacts__mail,
+  .contacts__adds {
+    float: left;
+    margin-left: 50px;
+  
+  }
+  .contacts__map {
+  height: 460px;
+  clear: both;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+  .contacts__btn {
+  width: 30%;
+  margin: 0 auto;
+  }
+}
+
+@media @desktop-widths {
+  .contacts {
+    position: relative;
+  padding-left: 225px;
+  padding-right: 50px;
+}
+  .contacts__heading {
+    font-size: 50px;
+  margin-bottom: 60px;
+  &::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -10%;
+   width: 47px;
+   height: 81px;
+   background: url("../img/flag.png") no-repeat center;
+   }
+  }
+
+.contacts__mail,
+.contacts__adds {
+  margin-left: 0;
+  float: none;
+}
+.contacts__map {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  width: 40%;
+  height: 460px;
+}
+.contacts__btn {
+  width: 30%;
+  margin: 0 0;
+ }
+}

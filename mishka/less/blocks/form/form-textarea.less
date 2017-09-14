@@ -1,0 +1,44 @@
+.form__textarea {
+    padding: 0 30px;
+    margin-bottom: 70px;
+  }
+
+  .form__field {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 20px;
+  font: inherit;
+  border: none;
+  outline: none;
+  resize: none;
+
+  border: 2px solid #000000;
+  transition: border-color .2s;
+  &:hover {
+      border: 2px solid #62d1ba;
+    }
+    &:focus {
+      border: 2px solid #62d1ba;
+    }
+    &:invalid {
+      border: 2px solid #f0b1b1;
+    }
+  }
+
+  @media @tablet-widths {
+    .form__textarea {
+      display: flex;
+      padding: 0 50px;
+    }
+  }
+
+  @media @desktop-widths {
+    .form__textarea {
+      padding: 0 110px;
+    }
+    .form__field {
+      width: 72%;
+    }
+  }

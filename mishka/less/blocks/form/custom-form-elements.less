@@ -1,0 +1,74 @@
+.form__label {
+  position: relative;
+  display: block;
+  max-height: 18px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.form__label--radio,
+.form__label--checkbox {
+  padding-left: 60px;
+  
+}
+
+.form__label input[type="radio"],
+.form__label input[type="checkbox"] {
+  display: none;
+}
+
+.form__label--radio::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+}
+
+.form__label--radio input[type="radio"]:checked
++ .radio-indicator {
+  position: absolute;
+  top: 3px;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  background: #62d1ba;
+  border-radius: 50%;
+}
+
+.form__label--checkbox::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+}
+
+.form__label--checkbox input[type="checkbox"]:checked
++ .checkbox-indicator {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  width: 22px;
+  height: 17px;
+  background: url("../img/tick-mobile.png") no-repeat center;
+}
+.form__label--radio::before,
+.form__label--checkbox::before {
+  transition: border-color .2s,
+              opacity .2s
+}
+.form__label--radio:hover.form__label--radio::before,
+.form__label--checkbox:hover.form__label--checkbox::before {
+  border: 2px solid #62d1ba;
+} 
+.form__label--radio:active.form__label--radio::before,
+.form__label--checkbox:active.form__label--checkbox::before {
+  opacity: .3;
+} 

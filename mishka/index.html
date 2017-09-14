@@ -11,15 +11,21 @@
     <body>
 
     <header class="page-header">
-  <div class="page-header__logo">
-    <img src="img/mishka-logo-mobile.png" width="86" height="35" alt="logo">
+  <div class="page-header__logo page-header__logo--active">
+  <picture>
+  <source media="(min-width: 1150px)"
+      srcset="img/mishka-logo-desktop.png">
+	  <source media="(min-width: 768px)"
+      srcset="img/mishka-logo-tablet.png">
+    <img src="img/mishka-logo-mobile.png"alt="logo">
+	</picture>
   </div>
 
     <nav class="main-nav main-nav--closed">
   <button class="main-nav__toggle" type="button">Открыть меню</button>
     <ul class="main-nav__items">
-      <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-      <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+      <li class="main-nav__item"><a href="goods.html">Каталог товаров</a></li>
+      <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
     </ul>
     <ul class="main-nav__items--hidden">
       <li class="main-nav__item main-nav__item--hidden"><a href="#">Новые поступления</a></li>
@@ -69,7 +75,21 @@
       </table>
 
       <div class="trend__img">
-         <img src="img/triple-set-mobile.jpg" alt="trend__img" width="260" height="315">
+	  <picture>
+	  <source
+	  type="image/webp"
+	  media="(min-width: 1150px)"
+	  srcset="img/triple-set-desktop.jpg"
+	  width="525"
+	  height="635">
+	  <source
+	  type="image/webp"
+	  media="(min-width: 768px)"
+	  srcset="img/triple-set-tablet.jpg"
+	  width="334"
+	  height="403">
+         <img src="img/triple-set-mobile.jpg" alt="trend__img">
+		 </picture>
       </div>
 
 
@@ -166,9 +186,9 @@
 
     </section>
 
-    <footer class="page-footer">
-     <section class="page-footer__section  page-footer__section--link">
-      <a href="#" class="page-footer__logo"><img src="img/logo-footer.png" width="102" height="34" alt="logo"></a>
+    <footer class="page-footer"><section class="page-footer__section  page-footer__section--link page-footer__section--link--active">
+      
+     </section>
      </section>
 
      <section class="page-footer__section  page-footer__section--social">
@@ -178,7 +198,7 @@
      </section>
 
      <section class="page-footer__section  page-footer__section--cprght">
-      <a href="#" class="page-footer__cprght"><span>Разработано</span><img src="img/htmlacademy.png" alt="htmlacademy" width="27" height ="34"></a>
+      <a href="https://htmlacademy.ru/" class="page-footer__cprght"><span>Разработано</span><img src="img/htmlacademy.png" alt="htmlacademy" width="27" height ="34"></a>
      </section>
 
     </footer>

@@ -1,0 +1,70 @@
+.form__username {
+    padding: 0 30px;
+  }
+  label.form__label__username {
+    margin-bottom: 80px;
+  }
+
+  .form__contacts-title {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .form__text {
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    transition: border-color .2s;
+    &:hover {
+      border-bottom: 2px solid #62d1ba;
+    }
+    &:focus {
+      border-bottom: 2px solid #62d1ba;
+    }
+    &:invalid {
+      border-bottom: 2px solid #f0b1b1;
+    }
+  }
+
+  @media @tablet-widths {
+    .form__username {
+      display: flex;
+      padding: 0 50px;
+    }
+
+    .form__username .form__labels {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+
+    .form__label__username b {
+      margin-right: 22px;
+    }
+
+    .form__label__username  {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form__text {
+      padding: 18px 0;
+      margin-top: -9px;
+    }
+  }
+
+  @media @desktop-widths {
+    .form__username {
+      padding: 0 110px;
+    }
+    .form__label__username {
+      justify-content: flex-start;
+    }
+
+    .form__text {
+      width: 70%;
+    }
+  }

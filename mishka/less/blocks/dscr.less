@@ -1,0 +1,178 @@
+.dscr {
+  z-index: 9;
+  padding-top: 90px; 
+  background: @bg-smoke url("../img/hero-mobile.jpg") no-repeat top;
+}
+.dscr__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 120px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dscr__btn {
+  position: relative;
+  display: block;
+  padding: 30px 195px 30px 30px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition:
+   background: .3s,
+   opacity: .3s;
+}
+.dscr__btn--inter {
+  background: #63d1bb;
+   &:hover {
+     background-color: #59d5bc;
+     &:active {
+       opacity: .7;
+     }
+   }
+}
+.dscr__btn--inter::after {
+         content: "";
+		 position: absolute;
+		 top: 23px;
+		 right: 67px;
+		 display: block;
+		 width: 40px;
+		 height: 62px;
+		 background: url("../img/interior.png") no-repeat center;
+       }
+.dscr__btn--toys {
+  background: #56c3b2;
+   &:hover {
+     background: #46c1ae;
+     &:active {
+       opacity: .7;
+     }
+   }
+}
+.dscr__btn--toys::after {
+         content: "";
+		 position: absolute;
+		 top: 25px;
+		 right: 57px;
+		 display: block;
+		 width: 60px;
+		 height: 60px;
+		 background: url("../img/toy.png") no-repeat center;
+       }
+
+@media @tablet-widths {
+  .dscr {
+    .clearfix();
+	position: relative;
+	padding-top: 150px;
+    text-align: center;
+    background: @bg-smoke url("../img/hero-desktop.jpg") no-repeat bottom;
+  }
+  .dscr::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 34px;
+  background: url("../img/zigzag-fill-desktop.png") repeat-x bottom;
+  }
+
+.dscr__heading {
+  width: 490px;
+  margin: 0 auto;
+  margin-bottom: 380px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+  .dscr__btn {
+    display: inline-block;
+    vertical-align: top;
+	padding-bottom: 57px;
+  }
+  .dscr__btn--inter {
+  background: #63d1bb;
+   &:hover {
+     background: #59d5bc;
+     &:active {
+       opacity: .7;
+     }
+   }
+}
+  .dscr__btn--inter::after {
+  right: 47px;
+  }
+.dscr__btn--toys {
+  background: #56c3b2;
+  margin-left: -4px;
+   &:hover {
+     background: #46c1ae;
+     &:active {
+       opacity: .7;
+       &::after {
+         content: "";
+
+       }
+     }
+   }
+}
+  .dscr__btn--toys::after {
+   right: 37px;
+  }
+}
+
+
+
+@media @desktop-widths {
+.dscr {
+  padding: 0 50px;
+  padding-top: 150px;
+  position: relative;
+  }
+  .dscr::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 34px;
+  background: url("../img/zigzag-fill-desktop.png") repeat-x bottom;
+  }
+.dscr__btn {
+position: relative;
+z-index: 3;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding: 30px;
+  padding-bottom: 57px;
+  text-align: justify;
+  
+}
+.dscr__btn--toys {
+  &:hover {
+  }
+  &:active {
+    opacity: .7;
+  }
+}
+.dscr__btn--inter {
+  &:hover {
+  }
+  &:active {
+    opacity: .7;
+  }
+ }
+}

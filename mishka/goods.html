@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+    <title>Mishka</title>
+
+  </head>
+    <body>
+
+    <header class="page-header">
+ <a href="index.html"> <div class="page-header__logo">
+   <picture>
+  <source media="(min-width: 1150px)"
+      srcset="img/mishka-logo-desktop.png">
+	  <source media="(min-width: 768px)"
+      srcset="img/mishka-logo-tablet.png">
+    <img src="img/mishka-logo-mobile.png"alt="logo">
+	</picture>
+  </div></a>
+
+    <nav class="main-nav main-nav--closed">
+  <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__items">
+      <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+      <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+    </ul>
+    <ul class="main-nav__items--hidden">
+      <li class="main-nav__item main-nav__item--hidden"><a href="#">Новые поступления</a></li>
+      <li class="main-nav__item main-nav__item--hidden"><a href="#">Распродажа</a></li>
+
+    </ul>
+    <ul class="main-nav__user-block">
+      <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+      <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: <span>пока пуста</span></a></li>
+    </ul>
+    <small class="main-nav__delivery">Бесплатная доставка по России</small>
+    </nav>
+    </header>
+    <h1 class="form__title">
+      Каталог товаров
+    </h1>
+
+    <main class="catalog">
+
+    <section class="catalog__goods">
+
+    <div class="good">
+     <div class="good__img">
+     <picture>
+     <source media="(min-width: 1150px)"
+      srcset="img/photo-1-desktop.jpg">
+    <source media="(min-width: 768px)"
+      srcset="img/photo-1-tablet.jpg">
+    <img src="img/photo-1-mobile.jpg"alt="logo">
+     </picture>
+     </div>
+
+     <div class="good__about">
+     <h2 class="good__title">
+     Зайчик-попрыгайчик
+     </h2>
+     <p class="good__char">
+     Рост 30 см, вес 200 г
+     </p>
+
+     <div class="good__price">
+     <b>1 200 руб.</b>
+
+     <button class="good__incart">
+     в корзину
+     </button>
+     </div>
+     </div>
+    </div>
+
+    <div class="good">
+     <div class="good__img">
+     <picture>
+     <source media="(min-width: 1150px)"
+      srcset="img/photo-2-desktop.jpg">
+    <source media="(min-width: 768px)"
+      srcset="img/photo-2-tablet.jpg">
+    <img src="img/photo-2-mobile.jpg"alt="logo">
+     </picture>
+     </div>
+
+     <div class="good__about">
+     <h2 class="good__title">
+     Корзинка для белья
+     </h2>
+     <p class="good__char">
+     Диаметр 15 см, высота 10 см
+     </p>
+
+     <div class="good__price">
+     690 руб.
+
+     <button class="good__incart">
+     в корзину
+     </button>
+     </div>
+     </div>
+    </div>
+
+    <div class="good">
+     <div class="good__img">
+     <picture>
+     <source media="(min-width: 1150px)"
+      srcset="img/photo-3-desktop.jpg">
+    <source media="(min-width: 768px)"
+      srcset="img/photo-3-tablet.jpg">
+    <img src="img/photo-3-mobile.jpg"alt="logo">
+     </picture>
+     </div>
+
+     <div class="good__about">
+     <h2 class="good__title">
+     Большая корзинка для игрушек
+     </h2>
+     <p class="good__char">
+     Диаметр 30 см, высота 30 см
+     </p>
+
+     <div class="good__price">
+     1 500 руб.
+
+     <button class="good__incart">
+     в корзину
+     </button>
+     </div>
+     </div>
+    </div>
+
+    </section>
+
+    <section class="catalog__video">
+    <div class="video">
+
+    <div class="video__header">
+    <h2 class="video__title">
+    Процесс<br> производства
+    </h2>
+    </div>
+
+    <div class="video__img"><a href="#">
+    <picture>
+    <source media="(min-width: 1150px)"
+      srcset="img/video-desktop.jpg">
+    <source media="(min-width: 768px)"
+      srcset="img/video-tablet.jpg">
+    <img src="img/video-mobile.jpg"alt="logo">
+    </picture>
+    </a>
+    </div>
+
+    <div class="video__action">
+
+    <p class="video__about">
+    По просьбам наших любимых
+    фолловеров мы сняля для вас
+    подробное видео о том, как
+    появляются наши товары
+    </p>
+     <a href="#" class="video__btn">Сделать заказ</a>
+    </div>
+    </div>
+
+    </section>
+    
+    </main>
+
+    <footer class="page-footer">
+     <a href="index.html"><section class="page-footer__section  page-footer__section--link">
+      
+     </section></a>
+
+     <section class="page-footer__section  page-footer__section--social">
+      <a href="#" class="page-footer__icon page-footer__icon--inst">inst</a>
+      <a href="#" class="page-footer__icon page-footer__icon--fb">fb</a>
+      <a href="#" class="page-footer__icon page-footer__icon--tw">tw</a>
+     </section>
+
+     <section class="page-footer__section  page-footer__section--cprght">
+      <a href="https://htmlacademy.ru/" class="page-footer__cprght"><span>Разработано</span><img src="img/htmlacademy.png" alt="htmlacademy" width="27" height ="34"></a>
+     </section>
+
+    </footer>
+    <script>
+      var btn = document.querySelector(".main-nav__toggle");
+      var nav = document.querySelector(".main-nav");
+
+      btn.addEventListener("click", function() {
+        if (nav.classList.contains("main-nav--closed")) {
+          nav.classList.remove("main-nav--closed");
+          nav.classList.add("main-nav--opened");
+        } else {
+          nav.classList.add("main-nav--closed");
+          nav.classList.remove("main-nav--opened");
+        }
+
+      });
+    </script>
+    </body>
+</html>

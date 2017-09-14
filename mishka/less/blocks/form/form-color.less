@@ -1,0 +1,35 @@
+.form__color {
+  padding: 0 30px;
+  margin-bottom: 70px;
+}
+
+@media @tablet-widths {
+
+  .form__color {
+    display: flex;
+    padding: 70px 50px;
+    background: #f1f1f1;
+  }
+  .form__color .form__labels {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   .form__color .form__labels .form__label {
+    flex-basis: 30%;
+   }
+  }
+
+  @media @desktop-widths {
+    .form__color {
+      padding: 70px 110px;
+    }
+    .form__color .form__labels {
+      width: 80%;
+    }
+    .form__color .form__labels .form__label {
+      flex-basis: 20%;
+    }
+  }

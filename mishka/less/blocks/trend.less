@@ -1,0 +1,179 @@
+.trend {
+  padding: 0 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin-bottom: 70px;
+  background: #ffffff url("../img/zigzag-line-desktop.png") repeat-x bottom;
+}
+.trend__heading {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: justify;
+}
+.trend__heading span {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #63d1bb;
+}
+.trend__heading span br {
+  display: none;
+  }
+
+.trend__about {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
+}
+.trend__options {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.trend__options td {
+  width: 50%;
+  padding: 5px 0;
+  border-collapse: collapse;
+  border-bottom: 1px solid #ececec;
+}
+
+.trend__img {
+  margin-bottom: 30px;
+}
+.trend__price {
+  display: block;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #444444;
+}
+.trend__btn {
+  display: block;
+  padding: 15px 0;
+  border: 2px solid #444444;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #444444;
+  transition: background-color .4s,
+              color .4s,
+              opacity .4s;
+  &:hover {
+   background: #444444;
+   color: #fff;
+  }
+  &:active {
+    background: #444444;
+  color: #fff;
+  opacity: .3;
+  }
+}
+
+@media @tablet-widths {
+  .trend {
+  .clearfix();
+  position: relative;
+  margin-bottom: 120px;
+  padding: 0 50px;
+  padding-top: 45px;
+  padding-bottom: 70px;
+  text-align: justify;
+  background: #ffffff url("../img/zigzag-line-desktop-tablet.png") repeat-x bottom;
+}
+.trend__heading {
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.trend__heading br {
+  display: none;
+}
+
+.trend__heading span {
+  width: 70px;
+  float: right;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: center;
+}
+.trend__heading span br {
+  display: inline;
+}
+
+.trend__about {
+  width: 280px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.trend__options {
+  width: 290px;
+  margin-bottom: 70px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.trend__img {
+  position: absolute;
+  top: 137px;
+  right: 50px;
+  width: 334px;
+  height: 403px;
+}
+.trend__buy {
+  width: 290px;
+}
+}
+
+@media @desktop-widths {
+  .trend {
+    padding-left: 225px;
+    padding-top: 130px;
+    margin-bottom: 150px;
+  }
+  .trend__heading {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+    font-size: 50px;
+  line-height: 50px;
+    font-weight: bold;
+  }
+  
+  .trend__heading span {
+    position: absolute;
+    left: -130px;
+  top: 9px;
+  }
+  
+  .trend__about {
+    width: 290px;
+    margin-bottom: 70px;
+  }
+   .trend__img {
+    top: 80px;
+    right: 50px;
+    z-index: 1;
+    width: 525px;
+    height: 635px;
+  }
+  .trend__buy {
+    margin-top: 27px;
+  }
+}
