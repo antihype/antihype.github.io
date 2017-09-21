@@ -772,6 +772,7 @@ body {
 	position: absolute;
 	left: 30px;
 	bottom: 5px;
+	margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -808,4 +809,10 @@ body {
 	.page-footer {
 		padding: 85px 50px;
 	}
+}
+
+.liveinternet {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
 }
