@@ -4,6 +4,7 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,inital-scale=1">
+  <meta name="keywords" content="ремонт, планшет, ноутбук, телефон, мобильный, сервис, залог, скупка">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -17,6 +18,10 @@
 <div class="top-background">
 <div class="top-overlay">
  <header class="page-header">
+  <div class="page-header__user-block">
+  <a href="#" class="login">Вход</a>
+</div>
+
   <ul class="main-nav">
    <li class="main-nav__item">
     <a href="#repair">Ремонт</a>
@@ -62,7 +67,7 @@
     <span>Магазин "Дефриз" <span>10:00-19:00</span></span>
     <br>
     <br>
-    Площадь баляева<br>
+    Площадь Баляева<br>
     <span>Адмирала Юмашева 2 <span>9:00-21:00</span></span>
     </p>
    </div>
@@ -285,7 +290,7 @@
     <span>Магазин "Дефриз" <span>10:00-19:00</span></span>
     <br>
     <br>
-    Площадь баляева<br>
+    Площадь Баляева<br>
     <span>Адмирала Юмашева 2 <span>9:00-21:00</span></span>
     <br>
     <br>
@@ -303,6 +308,79 @@
   </div>
 
    </footer>
+
+<section class="modal-content">
+<button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+<h2 class="section-title form__title">Вход в аккаунт</h2>
+<form class="form" action="#" method="post">
+  <div class="form__items">
+<label class="form__item">
+  <span>Номер телефона или эл. почта</span>
+  <input type="text" name="username">
+</label>
+
+<label class="form__item">
+  <span>Пароль</span>
+  <input type="password" name="password">
+</label>
+
+<label class="form__item form__item--lic">
+  <input type="checkbox">
+  <a href="#">Я принимаю лицензионное соглашение</a>
+  </label>
+</div>
+<input class="form__action" type="submit" value="Войти">
+</form>
+
+<div class="modal-content__afteform">
+   <a href="#">регистрация</a>
+   <a href="#">забыл пароль</a>
+  </div>
+</section>
+<script>
+var link = document.querySelector(".login");
+var popup = document.querySelector(".modal-content");
+var close = document.querySelector(".modal-content__close");
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=login]");
+var password = popup.querySelector("[name=password]");
+var storage = localStorage.getItem("login");
+
+link.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.add("modal-content-show");
+
+  if (storage) {
+    login.value = storage;
+    password.focus();
+  } else {
+    login.focus();
+  }
+});
+
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("modal-content-show");
+  popup.classList.remove("modal-error");
+});
+
+form.addEventListener("submit", function(event) {
+  if (!login.value || !password.value) {
+    event.preventDefault ();
+    popup.classList.add("modal-error");
+    console.log("Нужно ввести логин и пароль");
+  } else {
+    local.Storage.setItem("login", login.value);
+  }
+});
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal-content-show")) {
+    popup.classList.remove("modal-content-show");
+  }
+  }
+});
+</script>
 
   <script type="text/javascript" async src="js/scroll.js"></script>
   <script type="text/javascript">(function() {
