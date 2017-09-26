@@ -4,9 +4,10 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,inital-scale=1">
-  <meta name="keywords" content="ремонт, планшет, ноутбук, телефон, мобильный, сервис, залог, скупка">
+  <meta name="keywords" content="владивосток, ремонт, планшет, ноутбук, телефон, мобильный, сервис, залог, скупка">
+  <meta name="description" content="Сервисный центр во Владивостоке. Ремонт, скупка и залог мобильных телефонов, планшетов, ноутбуков.">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
 
@@ -197,7 +198,8 @@
 
     <li class="shop__feature">
      Реально низкие цены, а при регистрации
-     на нашем сайте еще ниже...
+     на нашем сайте вы получаете скидку
+     3%.
     </li>
 
     <li class="shop__feature">
@@ -333,53 +335,11 @@
 </form>
 
 <div class="modal-content__afteform">
-   <a href="#">регистрация</a>
+   <a href="reg.html" data-title="Скидка 3% при регистрации на сайте" class="registr">регистрация</a>
    <a href="#">забыл пароль</a>
   </div>
 </section>
-<script>
-var link = document.querySelector(".login");
-var popup = document.querySelector(".modal-content");
-var close = document.querySelector(".modal-content__close");
-var form = popup.querySelector("form");
-var login = popup.querySelector("[name=login]");
-var password = popup.querySelector("[name=password]");
-var storage = localStorage.getItem("login");
-
-link.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.add("modal-content-show");
-
-  if (storage) {
-    login.value = storage;
-    password.focus();
-  } else {
-    login.focus();
-  }
-});
-
-close.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.remove("modal-content-show");
-  popup.classList.remove("modal-error");
-});
-
-form.addEventListener("submit", function(event) {
-  if (!login.value || !password.value) {
-    event.preventDefault ();
-    popup.classList.add("modal-error");
-    console.log("Нужно ввести логин и пароль");
-  } else {
-    local.Storage.setItem("login", login.value);
-  }
-});
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (popup.classList.contains("modal-content-show")) {
-    popup.classList.remove("modal-content-show");
-  }
-  }
-});
+<script type="text/javascript" async src="js/form.js">
 </script>
 
   <script type="text/javascript" async src="js/scroll.js"></script>
