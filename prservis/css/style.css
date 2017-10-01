@@ -1040,3 +1040,315 @@ left: 30px;
 	margin-top: -15px;
 	margin-bottom: 50px;
 }
+
+.first-view__title h1 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+.first-view__title--shop span {
+	font-size: 18px;
+	line-height: 12px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+	.first-view__title--shop span {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 1150px) {
+
+	.first-view__title--shop span {
+		font-size: 30px;
+    }
+}
+
+.shop-nav {
+	padding: 0 20px;
+
+	background-color: #000000;
+}
+
+.shop-nav__items {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+
+
+.shop-nav__item a {
+	display: block;
+	padding: 20px 10px;
+	padding-bottom: 22px;
+
+	font-size: 13px;
+	line-height: 13px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+
+	transition: color .2s,
+	            background-color .2s;
+}
+
+
+.shop-nav__item--active a {
+	color: #000000;
+
+	cursor: default;
+
+	background-color: #ffffff;
+}
+
+.shop-nav__item a:hover {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.shop-nav__toggle {
+	display: none;
+}
+
+@media (min-width: 768px) {
+
+	.shop-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	    padding: 0 50px;
+
+	    background-color: #000000;
+   }
+
+
+   .shop-nav__item a {
+   	padding: 20px 15px;
+   	font-size: 18px;
+   	line-height: 18px;
+   }
+
+   .shop-nav__toggle {
+   	position: relative;
+   	display: block;
+   	width: 37px;
+   	height: 40px;
+   	margin-top: 20px;
+
+   	border: none;
+   	outline: none;
+   	cursor: pointer;
+
+   	font-size: 0;
+
+   	background: none;
+
+   }
+
+   
+
+   .shop-nav__toggle::before {
+   	content: "";
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+
+   	width: 37px;
+   	height: 4px;
+
+   	background-color: #ffffff;
+
+   	box-shadow: 0 10px 0 0 #ffffff,
+	            0 20px 0 0 #ffffff;
+   }
+
+}
+
+@media (min-width: 1150px) {
+
+	.shop-nav__item a {
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+
+.catalog-lay {
+	display: none;
+	padding: 30px;
+	color: #000000;
+}
+
+.catalog-lay--active {
+	display: block;
+}
+
+
+.goods {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.good {
+	display: flex;
+	flex-direction: row;
+    margin-bottom: 5%;
+
+	border: 1px solid #3e3e3e;
+	border-radius: 2px;
+}
+
+.good__img {
+	width: 37%;
+	margin-right: 8%;
+}
+
+.good__img img {
+	width: 100%;
+	height: 100%;
+}
+
+.good__about {
+	display: flex;
+	flex-direction: column;
+
+	width: 40%;
+	padding: 3%;
+}
+
+.good__title {
+	margin: 0;
+
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.good__description{
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.good__action {
+	margin-top: auto;
+}
+.good__buy {
+	display: block;
+	width: 70%;
+	margin-top: 5px;
+	padding: 8px 0;
+
+	border: 1px solid #3e3e3e;
+	border-radius: 2px;
+
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	transition: background-color .2s,
+	            color .2s;
+}
+
+.good__buy:hover {
+	background-color: #3e3e3e;
+	color: #ffffff;
+}
+
+@media (min-width: 768px) {
+	
+	.catalog-lay {
+		padding:50px;
+	}
+
+	.goods {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.goods--linear .good {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.good {
+		justify-content: space-between;
+		width: 47%;
+	}
+
+	.good__img {
+		width: 45%;
+		margin-right: 0;
+	}
+
+	.goods--linear .good__img {
+		width: 10%;
+	}
+
+	.goods--linear .good__about {
+		width: 85%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.good__title {
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.goods--linear .good__title {
+		width: 30%;
+		margin: auto;
+	}
+
+	.good__description {
+		font-size: 15px;
+	}
+
+	.goods--linear .good__description {
+		width: 30%;
+		margin: auto;
+	}
+
+	.goods--linear .good__action {
+		width: 30%;
+		margin: auto;
+	}
+
+	.good__price {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.good__buy {
+		font-size: 16px;
+		line-height: 16px;
+	}
+}
+
+@media (min-width: 1150px) {
+	
+	.good {
+		width: 30%;
+	}
+}

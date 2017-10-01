@@ -1,0 +1,36 @@
+var navMobiles = document.querySelector('.shop-nav__item--mobiles');
+var navTablets = document.querySelector('.shop-nav__item--tablets');
+var navNotebooks = document.querySelector('.shop-nav__item--notebooks');
+
+navMobiles.addEventeListener('click', function(event) {
+	if (navMobiles.classList.contains('shop-nav__item--active') {
+		event.preventDefault();
+	} else {
+		event.preventDefault();
+		navMobiles.classList.add('shop-nav__item--active');
+		navTablets.classList.remove('shop-nav__item--active');
+		navNotebooks.classList.remove('shop-nav__item--active');
+	})
+});
+
+navTablets.addEventeListener('click', function(event) {
+	if (navTablets.classList.contains('shop-nav__item--active') {
+		event.preventDefault();
+	} else {
+		event.preventDefault();
+		navTablets.classList.add('shop-nav__item--active');
+		navMobiles.classList.remove('shop-nav__item--active');
+		navNotebooks.classList.remove('shop-nav__item--active');
+	})
+});
+
+navNotebooks.addEventeListener('click', function(event) {
+	if (navNotebooks.classList.contains('shop-nav__item--active') {
+		event.preventDefault();
+	} else {
+		event.preventDefault();
+		navNotebooks.classList.add('shop-nav__item--active');
+		navTablets.classList.remove('shop-nav__item--active');
+		navMobiles.classList.remove('shop-nav__item--active');
+	})
+});
