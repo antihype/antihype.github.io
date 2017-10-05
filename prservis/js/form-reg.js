@@ -60,16 +60,11 @@ passRepeat.addEventListener ('focus', function() {
     form.addEventListener ('submit', function(event) {
       event.preventDefault();
     var xhr = new XMLHttpRequest();
+    xhr.onload = editTr;
 
-    xhr.open('post', '/send');
-
-    xhr.addEventListener('readystatechange', function() {
-      if (xhr.readyState == 4) {
-        console.log(xhr.responseText);
-      }
-    });
-
-      xhr.send(qs);
+    xhr.open('post', 'https://nanoserv.ru/work/jsonrequest.php', true);
+    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=utf-8");
+    xhr.send(qs);
 
       
 
@@ -77,3 +72,8 @@ passRepeat.addEventListener ('focus', function() {
 
 });
   })();
+
+ function editTr() {
+   var resp = this.responseText;
+   alert(resp);
+  }
