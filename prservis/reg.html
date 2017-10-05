@@ -7,7 +7,7 @@
   <meta name="keywords" content="владивосток, ремонт, планшет, ноутбук, телефон, мобильный, сервис, залог, скупка, регистрация">
   <meta name="description" content="Регистрация на сайте сервисного центра во Владивостоке. Ремонт, скупка и залог мобильных телефонов, планшетов, ноутбуков.">
 
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
 
@@ -37,16 +37,24 @@
   <div class="form__items">
 <label class="form__item">
   <span>Номер телефона или эл. почта</span>
-  <input type="text" name="username">
+  <input class="form__username" type="text" name="username">
+  <small class="error">Номер телефона без '8' и пробелов или emai адрес</small>
 </label>
 
 <label class="form__item">
   <span>Пароль</span>
-  <input type="password" name="password">
+  <input class="form__password" type="password" name="password">
+  <small class="error">Не менее 6 символов</small>
+</label>
+
+<label class="form__item">
+  <span>Повторите пароль</span>
+  <input class="form__password-repeat" type="password" name="password">
+  <small class="error">Неверный пароль</small>
 </label>
 
 <label class="form__item form__item--lic">
-  <input type="checkbox">
+  <input type="checkbox" class="agree" >
   <a href="#">Я принимаю лицензионное соглашение</a>
   </label>
 </div>
@@ -62,7 +70,7 @@
 </div>
 
 
-<script type="text/javascript" async src="js/form.js">
+<script type="text/javascript" async src="js/form-reg.js">
 </script>
  </body>
 </html>

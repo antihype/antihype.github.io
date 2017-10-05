@@ -7,7 +7,7 @@
   <meta name="keywords" content="владивосток, ремонт, планшет, ноутбук, телефон, мобильный, сервис, залог, скупка">
   <meta name="description" content="Сервисный центр во Владивостоке. Ремонт, скупка и залог мобильных телефонов, планшетов, ноутбуков.">
 
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
 
@@ -19,9 +19,12 @@
 <div class="top-background">
 <div class="top-overlay">
  <header class="page-header">
-  <div class="page-header__user-block">
-  <a href="#" class="login">Вход</a>
+  <div class="page-header__user-block page-header__user-block--unsigned">
+    <span id="#">Login</span>
+    <a href="login.html" class="unsigned login">Вход</a>
+    <a href="#" class="signed login">Выход</a>
 </div>
+
 
   <ul class="main-nav">
    <li class="main-nav__item">
@@ -314,16 +317,16 @@
 <section class="modal-content">
 <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
 <h2 class="section-title form__title">Вход в аккаунт</h2>
-<form class="form" action="#" method="post">
+<form class="form-sign" action="#" method="post">
   <div class="form__items">
 <label class="form__item">
   <span>Номер телефона или эл. почта</span>
-  <input type="text" name="username">
+  <input class="form__username" type="text" name="username">
 </label>
 
 <label class="form__item">
   <span>Пароль</span>
-  <input type="password" name="password">
+  <input class="form__password" type="password" name="password">
 </label>
 
 </div>
