@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+  <html lang="ru">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <title>Barbeshop - запись на стрижку</title>
+
+  </head>
+
+ <body>
+
+  <header class="page-header">
+    <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
+    <div class="page-header__logo">
+   	  <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.png">
+      <img src="img/logotype-mobile.png" alt="Барбершоп «Бородинский»">
+    </picture>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+        	<ul class="main-nav__items">
+        		<li class="main-nav__item ">
+        			<a href="index.html">Главная</a>
+        		</li>
+        		<li class="main-nav__item">
+        			<a href="gallery.html">Наши работы</a>
+        		</li>
+        		<li class="main-nav__item main-nav__item--active">
+        			<a>Записаться</a>
+        		</li>
+        		<li class="main-nav__item">
+        			<a href="#">Контакты</a>
+        		</li>
+        		<li class="main-nav__item">
+        			<a href="https://htmlacademy.ru">Html academy</a>
+        		</li>
+        	</ul>
+        	<ul class="main-nav__user-items">
+        		<li class="main-nav__user-item">
+        			<a class="main-nav__user-login" href="#" title="Войти">Вход</a>
+        		</li>
+        	</ul>
+        </div>
+    </nav>
+  </header>
+
+  <form class="app-form">
+    <div class="app-form__wrapper">
+        <div class="app-form__title">
+     <h2>Запись на стрижу</h2>
+     <a class="app-form__crumb" href="index.html">На главную</a>
+ </div>
+    <div class="app-form__inputs app-form__inputs--fullname">
+        <input class="app-form__input app-form__input--name" type="text" name="name" placeholder="Имя">
+        <input class="app-form__input app-form__input--name" type="text" name="surname" placeholder="Фамилия">
+        <input class="app-form__input app-form__input--name" type="text" name="patron" placeholder="Отчество">
+    </div>
+    <div class="app-form__inputs app-form__inputs--contacts">
+        <input class="app-form__input app-form__input--contact" type="tel" name="tel" placeholder="Контактный телефон">
+        <input class="app-form__input app-form__input--contact" type="email" name="email" placeholder="Контактный e-mail">
+    </div>
+    <div class="app-form__inputs app-form__inputs--message">
+        <textarea class="app-form__message" placeholder="Доп. информация для мастера" rows="5"></textarea>
+    </div>
+    <div class="app-form__radios">
+        <h3>Выберите модель бороды:</h3>
+        <ul class="app-form__models">
+         <li class="app-form__model app-form__model--adm"><label><input class="app-form__radio" type="radio" value="adm" name="model"><span class="app-form__radio-indicator"></span>Адмирал</label></li>
+         <li class="app-form__model app-form__model--les"><label><input class="app-form__radio" type="radio" value="les" name="model" checked><span class="app-form__radio-indicator"></span>Лесоруб</label></li>
+         <li class="app-form__model app-form__model--pol"><label><input class="app-form__radio" type="radio" value="pol" name="model"><span class="app-form__radio-indicator"></span>Полярник</label></li>
+         <li class="app-form__model app-form__model--boy"><label><input class="app-form__radio" type="radio" value="boy" name="model"><span class="app-form__radio-indicator"></span>Боярин</label></li>
+         <li class="app-form__model app-form__model--mud"><label><input class="app-form__radio" type="radio" value="mud" name="model"><span class="app-form__radio-indicator"></span>Мудрец</label></li>
+        </ul>
+    </div>
+    <div class="app-form__checkboxes">
+        <h3>Дополнительные услуги:</h3>
+        <ul class="app-form__services">
+            <li class="app-form__service">
+                <label><input class="app-form__checkbox" type="checkbox" name="service" value="paint"><span class="app-form__checkbox-indicator"></span>Подкрасить бороду</label>
+            </li>
+            <li class="app-form__service">
+                <label><input class="app-form__checkbox" type="checkbox" name="service" value="twisted"><span class="app-form__checkbox-indicator"></span>Накрутить усы</label>
+            </li>
+            <li class="app-form__service">
+                <label><input class="app-form__checkbox" type="checkbox" name="service" value="comb"><span class="app-form__checkbox-indicator"></span>Причесать бороду</label>
+            </li>
+            <li class="app-form__service">
+                <label><input class="app-form__checkbox" type="checkbox" name="service" value="temple"><span class="app-form__checkbox-indicator"></span>Подравнять виски</label>
+            </li>
+            <li class="app-form__service">
+                <label><input class="app-form__checkbox" type="checkbox" name="service" value="gray"><span class="app-form__checkbox-indicator"></span>Убрать седину</label>
+            </li>
+            <li class="app-form__service">
+                <label><input class="app-form__checkbox" type="checkbox" name="service" value="bald"><span class="app-form__checkbox-indicator"></span>Отполировать лысину</label>
+            </li>
+        </ul>
+    </div>
+    <input class="app-form__action" type="submit" value="Отправить заявку">
+    </div>
+  </form>
+
+<footer class="page-footer">
+     <div class="page-footer__wrapper">
+        <p class="page-footer__contacts">
+             <b>Барбершоп «Бородинский»</b><br>
+                г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+                <a href="tel:+78125556666"><span class="page-footer__contacts--hidden">Тел.:</span> +7 (812) 555-66-66</a>
+        </p>
+        <p class="page-footer__social">
+             <span class="social-links">
+                 <a class="social-link social-link--vk" href="#">Мы в Вконтакте</a>
+                 <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
+                 <a class="social-link social-link--in" href="#">Мы в Инстаграме</a>
+             </span>
+        </p>
+        <p class="page-footer__copyright">
+             Разработано:
+             <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+     </div>
+  </footer>
+
+  <section class="log-in-form">
+    <form>
+    <div class="log-in-form__wrapper">
+     <h2 class="log-in-form__title">
+      Личный кабинет
+     </h2>
+     <span class="log-in-form__manual">Введите свой логин и пароль, чтобы войти</span>
+     <input class="log-in-form__field log-in-form__field--login" type="text" name="login" placeholder="Логин">
+     <input class="log-in-form__field log-in-form__field--pass" type="password" name="password" placeholder="Пароль">
+     <div class="log-in-form__functions">
+      <label><input type="checkbox" name="memory"><span class="checkbox-indicator"></span> Запомнить меня</label>
+      <a href="#">Я забыл пароль!</a>
+     </div>
+     <div class="log-in-form__buttons">
+      <input type="submit" class="log-in-form__submit" value="Войти">
+      <button class="log-in-form__close">Закрыть</button>
+     </div>
+  </div>
+      </form>
+  </section>
+ 
+ <script type="text/javascript" async src="js/menu.js"></script>
+
+ <script>
+
+  var login = document.querySelector('.main-nav__user-login');
+  var popup = document.querySelector('.log-in-form');
+  var close = document.querySelector('.log-in-form__close');
+  var loginInput = document.querySelector('.log-in-form__field--login');
+  var passwordInput = document.querySelector('.log-in-form__field--pass');
+  var form = popup.querySelector('form');
+  var storage = localStorage.getItem('login');
+
+  login.addEventListener ('click', function(event) {
+    event.preventDefault();
+    popup.classList.add('log-in-form--show');
+
+    if (storage != 0) {
+      loginInput.value = storage;
+      passwordInput.focus();
+    } else {
+      loginInput.focus();
+    }
+  });
+
+  window.addEventListener ('keydown', function(event) {
+    if (event.keyCode === 27) {
+    if (popup.classList.contains('log-in-form--show')){
+      popup.classList.remove('log-in-form--show');
+     }
+    }
+  });
+
+  close.addEventListener ('click', function(event) {
+    event.preventDefault();
+    popup.classList.remove('log-in-form--show');
+  });
+
+  form.addEventListener ('submit', function(event) {
+    if (!loginInput.value || !passwordInput.value) {
+      event.preventDefault();
+      popup.classList.add('log-in-form--error');
+    } else {
+      localStorage.setItem('login', loginInput.value);
+    }
+
+  });
+
+
+ </script>
+ </body>
+</html>
