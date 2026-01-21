@@ -162,7 +162,7 @@ body {
   font-weight: lighter;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 @media(min-width: 600px) {
@@ -588,3 +588,4 @@ footer h2 {
   margin: 0;
   margin-bottom: 30px;
 }
+
