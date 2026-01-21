@@ -483,8 +483,15 @@ body {
 
   padding-top: 100px;
   padding-bottom: 500px;
-  background: url("../img/h-bg.jpeg") no-repeat center;
-  background-size: cover;
+  background: url("../img/russia.png") no-repeat center,
+              url("../img/h-bg.jpeg") no-repeat center;
+  background-size: 100%, cover;
+}
+
+@media(min-width: 800px) {
+  .map {
+    background-size: 70%, cover;
+  }
 }
 
 
@@ -588,5 +595,3 @@ footer h2 {
   margin: 0;
   margin-bottom: 30px;
 }
-
-
