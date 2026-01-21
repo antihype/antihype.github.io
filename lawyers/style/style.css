@@ -120,7 +120,7 @@ body {
   text-decoration: none;
 }
 
-.main-nav-item a:hover {
+.main-nav-item a:active {
   color: #BF4539;
 }
 
@@ -147,6 +147,10 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+  .main-nav-item a:hover {
+    color: #BF4539;
+  }
 }
 
 .main-title {
@@ -154,11 +158,17 @@ body {
   margin-top: 200px;
   margin-bottom: 30px;
 
-  font-size: 40px;
+  font-size: 26px;
   font-weight: lighter;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+}
+
+@media(min-width: 600px) {
+  .main-title {
+    font-size: 40px;
+  }
 }
 
 .main-nav-par {
@@ -245,8 +255,14 @@ body {
 }
 
 .services-par {
-  font-size: 40px;
+  font-size: 26px;
   text-align: center;
+}
+
+@media(min-width: 600px) {
+  .service-par {
+    font-size: 40px;
+  }
 }
 
 .services-items {
@@ -401,8 +417,35 @@ body {
   width: 100px;
   height: 100px;
   margin-left: -50px;
+}
 
+.advantages-list li.practic::before {
   background: url("../img/file.png") no-repeat center;
+  background-size: cover;
+}
+
+.advantages-list li.conf::before {
+  background: url("../img/confidentiality.png") no-repeat center;
+  background-size: cover;
+}
+
+.advantages-list li.pers::before {
+  background: url("../img/group.png") no-repeat center;
+  background-size: cover;
+}
+
+.advantages-list li.rate::before {
+  background: url("../img/rating.png") no-repeat center;
+  background-size: cover;
+}
+
+.advantages-list li.rev::before {
+  background: url("../img/good-review.png") no-repeat center;
+  background-size: cover;
+}
+
+.advantages-list li.cons::before {
+  background: url("../img/interview.png") no-repeat center;
   background-size: cover;
 }
 
@@ -444,24 +487,6 @@ body {
   background-size: cover;
 }
 
-.map::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  width: 600px;
-  height: 272px;
-  background: url("../img/russia.png") no-repeat center;
-  background-size: cover;
-}
-
-@media(min-width: 960px) {
-  .map::before {
-    left: 15%;
-    width: 780px;
-    height: 355px;
-  }
-}
 
 .map p {
   margin: 0;
