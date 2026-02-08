@@ -2,9 +2,9 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta
-    name="viewport"
-    content="width=device-width,initial-scale=1">
+    <title>Око Государево</title>
+    <meta name="description" content="Опытный военный юрист во Владивостоке. Консультации по военному праву, помощь в спорах, защита прав военнослужащих и контрактной службы.">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,7 @@
     <header class="main-header">
         <nav class="main-nav">
           <div class="container">
+            <!-- <img class="main-nav-logo" width="135" height="95" src="img/logo.png" alt="Око Государево"> -->
             <span class="nav-span nav-span-active">Меню</span>
             <button class="nav-toggle" type="button">Закрыть меню</button>
             <ul class="main-nav-items">
@@ -23,13 +24,13 @@
                 <a>Главная</a>
               </li>
               <li class="main-nav-item">
-                <a href="#">О нас</a>
+                <a href="#about">О нас</a>
               </li>
               <li class="main-nav-item">
-                <a href="#">Стоимость</a>
+                <a href="#recall-title">Оставить заявку</a>
               </li>
               <li class="main-nav-item">
-                <a href="#">Контакты</a>
+                <a href="#contact-us">Связаться с нами</a>
               </li>
               <li class="main-nav-item">
                 <a href="#">Нужно знать</a>
@@ -42,8 +43,9 @@
             <h1 class="main-title">Военные юристы во Владивостоке</h1>
             <p class="main-nav-par">Юридическая компания по военному праву</p>
             <div class="header-btn-wrapp">
-              <a class="btn btn-tg" href="#">Консультация в telegram</a>
+              <a class="btn btn-cta" href="#recall-title">Оставить заявку</a>
               <a class="btn btn-wp" href="#">Консультация в whatsapp</a>
+              <a class="btn btn-tg" href="#">Консультация в telegram</a>
             </div>
           </div>
         </div>
@@ -53,56 +55,49 @@
         <section class="services">
          <div class="container">
           <div class="services-header">
-            <h2 class="visually-hidden">Услуги</h2>
+            <h2 id="about" class="visually-hidden">Услуги</h2>
               <p class="services-par">Мы предоставляем комплексные юридические услуги в следующих сферах:</p>
           </div>
           <ul class="services-items">
             <li class="services-item services-item-call">
               <h3><a>Призыв на военную службу</a></h3>
               <ul class="services-item-list">
-                <li>Консультирование по вопросам призыва,
-                освобождения и отсрочек</li>
-                <li>Обжалование решений призывных комиссий
-                (в призывную комиссию субъекта и/или
-                в судебном порядке)</li>
-                <li>Сопровождение призывных мероприятий (очно/заочно)</li>
-                <li>Подготовка всего комплекса необходимых документов</li>
-                <li><a href="#" class="btn">Запись на консультацию</a></li>
+                <li>Разъясняем вопросы призыва, отсрочки и освобождения от воинской службы</li>
+                <li>Помогаем обжаловать решения призывных комиссий — через региональную комиссию или суд</li>
+                <li>Сопровождаем на всех этапах призывных мероприятий (лично или удалённо)</li>
+                <li>Берём на себя подготовку всех нужных документов</li>
+                <li><a href="#recall-title" class="btn">Запись на консультацию</a></li>
               </ul>
             </li>
             <li class="services-item services-item-mil">
               <h3><a>Прохождение военной службы</a></h3>
               <ul class="services-item-list">
-                <li>Консультирование по вопросам прохождения
-                военной службы</li>
-                <li>Обжалование незаконных действий командования
-                (отпуск, взыскание, незаконное увольнение и др.)</li>
-                <li>Установление факта награждения государственными
-                и веомственными наградами</li>
-                <li>Защита по уголовным делам в отношении военнослужащих
-                (в и.ч. защита прав потерпевших)</li>
-                <li><a href="#" class="btn">Запись на консультацию</a></li>
+                <li>Помогаем разобраться с вопросами прохождения военной службы</li>
+                <li>Отстаиваем ваши права при неправомерных действиях командования</li>
+                <li>Содействуем в подтверждении факта награждения государственными и ведомственными наградами</li>
+                <li>Обеспечиваем юридическую защиту военнослужащих по уголовным делам, в том числе защищаем права потерпевших</li>
+                <li><a href="#recall-title" class="btn">Запись на консультацию</a></li>
               </ul>
             </li>
             <li class="services-item services-item-money">
               <h3><a>Выплаты и пособия</a></h3>
               <ul class="services-item-list">
-                <li>Получение региональных и федеральных выплат</li>
-                <li>Получение страховых выплат и за ранения (гибель)</li>
-                <li>Восстановление денежного довольствия</li>
-                <li>Установление надбавок за особые условия служюы</li>
-                <li>Вопросы накопительно-ипотечной системы (НИС)</li>
-                <li><a href="#" class="btn">Запись на консультацию</a></li>
+                <li>Помогаем оформить федеральные и региональные выплаты</li>
+                <li>Сопровождаем получение страховых выплат в случае ранения или гибели</li>
+                <li>Восстанавливаем ваше право на положенное денежное довольствие</li>
+                <li>Оформляем надбавки за службу в особых условиях</li>
+                <li>Разъясняем и помогаем решать вопросы по накопительно‑ипотечной системе (НИС)</li>
+                <li><a href="#recall-title" class="btn">Запись на консультацию</a></li>
               </ul>
             </li>
             <li class="services-item services-item-soc">
               <h3><a>Социальное обеспечение</a></h3>
               <ul class="services-item-list">
-                <li>Разрешение вопросов медицинского и пенсионного обеспечения</li>
-                <li>Получение ветеранских удостоверений (участника боевых действий)</li>
-                <li>Сопровождение процедуры банкротства военнослужащих)</li>
-                <li>Регулирование семейных отношений военнослужащих</li>
-                <li><a href="#" class="btn">Запись на консультацию</a></li>
+                <li>Урегулирование вопросов медицинского обслуживания и пенсионного обеспечения</li>
+                <li>Содействие в оформлении удостоверений ветерана боевых действий</li>
+                <li>Юридическое сопровождение процедуры банкротства военнослужащих</li>
+                <li>Правовое регулирование семейных отношений с участием военнослужащих</li>
+                <li><a href="#recall-title" class="btn">Запись на консультацию</a></li>
               </ul>
             </li>
           </ul>
@@ -112,33 +107,31 @@
         <section class="advantages">
           <div class="container">
             <h2>Наши преимущества</h2>
-            <p class="advantages-par">Нам доверяют даже в самых сложных ситуациях, поскольку
-              уверены: наши военные юристы найдут оптимальные решения и обеспечат надежную
-              защиту интересов</p>
+            <p class="advantages-par">Мы — юридическая компания, которая ставит интересы клиента на первое место. Независимо от того, насколько сложна ваша ситуация, мы готовы оказать профессиональную поддержку и найти правовое решение. Наши специалисты обладают глубокой экспертизой в различных областях права и умеют работать даже с самыми неоднозначными кейсами. Обратитесь к нам — и вы получите внимательное отношение, чёткий план действий и надёжную защиту ваших прав. Мы не оставляем клиентов наедине с проблемами: вместе мы пройдём весь путь до положительного результата.</p>
               <ul class="advantages-list">
                 <li class="practic">
-                  <b>Годы практики</b>
-                  <p>Все наши специалисты имеют успешный опыт юридической практики более 10 лет</p>
+                  <b>Опыт, которому можно доверять</b>
+                  <p>Наши юристы практикуют более 10 лет — они знают, как решать сложные правовые вопросы.</p>
                 </li>
                 <li class="conf">
-                  <b>Конфиденциальность</b>
-                  <p>В начале работы мы заключаем договор о неразглашении</p>
+                  <b>Ваша информация под защитой</b>
+                  <p> Мы подписываем соглашение о неразглашении, чтобы вы могли быть уверены в безопасности данных.</p>
                 </li>
                 <li class="pers">
-                  <b>Персональный подход</b>
-                  <p>Индивидуальная работа с каждым клиентом позволяет решать даже самые сложные проблемы</p>
+                  <b>Решение именно вашей проблемы</b>
+                  <p>Мы не используем шаблонные схемы: каждый случай прорабатывается индивидуально.</p>
                 </li>
                 <li class="rate">
-                  <b>Репутация</b>
-                  <p>Мы занимаем лидирующие позиции на рынке юридических услуг в сфере военного права</p>
+                  <b>Лидерство в военном праве</b>
+                  <p>Мы занимаем топовые позиции на рынке, потому что наши клиенты получают результат</p>
                 </li>
                 <li class="rev">
-                  <b>Отзывы</b>
-                  <p>Успешно решённые проблемы наших доверителей говорят о нашей компетенции</p>
+                  <b>Реальные истории успеха</b>
+                  <p>Отзывы довольных клиентов — лучшее подтверждение нашей экспертизы.</p>
                 </li>
                 <li class="cons">
-                  <b>Подробная первичная консультация</b>
-                  <p>Анализируем ситуацию клиента, даём рекомендации и помогаем спланировать дальнейшие действия</p>
+                  <b>Чёткий план с первого разговора</b>
+                  <p>На первичной консультации мы разберём вашу ситуацию, дадим рекомендации и наметим шаги для решения вопроса.</p>
                 </li>
               </ul>
           </div>
@@ -150,23 +143,43 @@
           </div>
         </section>
 
-        <section class="contacts">
+        <section class="recall">
           <div class="container">
-            <h2 class="contacts-title">Контакты</h2>
-            <div class="img-cont">
-             <img src="img/lawyers.jpg" width="150" height="150" alt="Юрист">
-            </div>
-            <div class="contacts-cont">
-              <a class="btn" href="#">
-                +7 (914) 690 9469
-              </a>
-              <a class="btn btn-tg" href="#">
-                Telegram
-              </a>
-              <a class="btn btn-wp" href="#">
-                Whats'App
-              </a>
-            </div>
+            <h2 id="recall-title" class="recall-title">Оставить заявку</h2>
+            <p class="recall-par">Оставьте заявку и мы свяжемся с вами в кратчайшее время</p>
+            <form id="leadFormInline" class="lead-form" autocomplete="on">
+          <label><span class="visually-hidden">Имя</span>
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label><span class="visually-hidden">Телефон</span>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+          </label>
+          <label><span class="visually-hidden">Email</span>
+            <input type="email" name="_replyto" placeholder="Email">
+          </label>
+          <label><span class="visually-hidden">Сервис/причина обращения</span>
+            <select name="service" aria-label="Сервис">
+              <option value="Консультация по военному праву">Консультация по военному праву</option>
+              <option value="Защита прав военнослужащих">Защита прав военнослужащих</option>
+              <option value="Юридическая помощь по призыву">Юридическая помощь по призыву</option>
+            </select>
+          </label>
+
+        <!-- Ходжпот: анти-бот поле, не заполняется человеком -->
+        <div style="position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <input type="hidden" name="_subject" value="Новая заявка на консультацию">
+        <button type="submit" class="btn-submit">Отправить</button>
+      </form>
+      <h2 id="contact-us" class="recall-title">Связаться с нами</h2>
+      <p class="recall-par">Вы можете связаться с нами напрямую:</p>
+      <div class="recall-btn-wrapp">
+        <a class="btn" href="#">+7 914 690 94-69</a>
+        <a class="btn btn-wp" href="#">Консультация в whatsapp</a>
+        <a class="btn btn-tg" href="#">Консультация в telegram</a>
+      </div>
           </div>
           <ul class="socials">
             <li><a href="#" class="socials-icon socials-tg">Telegram</a></li>
@@ -178,20 +191,38 @@
 
     <footer>
       <div class="container">
-        <h2>ООО "Юристы"</h2>
-        <p>Юридический адрес компании:<br>
-            г. Владивосток, ул. Тобольская, дом 11, квартира 9 Россия, ******.<br>
-                ОГРН: *************<br>
-                КПП: *********<br>
-                ИНН: **** ******<br>
-              <a href="#">@gmail.com</a></p>
+        <div class="footer-logo">
+          <img class="logo" width="175" height="135" src="img/logo.png" alt="Око Государево">
+        </div>
+        <p class="footer-par">Контакты:<br>
+            <a href="#">+7 914 690 94-69</a><br>
+                <a class="footer-wp" href="#">Whatsapp</a><br>
+                <a class="footer-tg" href="#">Telegram</a><br>
+                <a href="#">@gmail.com</a><br>
+        </p>
       </div>
     </footer>
+    <a class="const-btn" href="#recall-title">Оставить заявку</a>
 
     <script>
       var btn = document.querySelector(".nav-toggle");
       var items = document.querySelector(".main-nav-items");
       var span = document.querySelector(".nav-span");
+      var nav = document.querySelector(".main-nav");
+
+      span.addEventListener("click", function(e) {
+        e.preventDefault();
+        if (items.classList.contains("main-nav-items-active")) {
+          items.classList.remove("main-nav-items-active")
+        } else {
+          items.classList.add("main-nav-items-active")
+        }
+        if (span.classList.contains("nav-span-active")) {
+          span.classList.remove("nav-span-active")
+        } else {
+          span.classList.add("nav-span-active")
+        }
+      })
 
       btn.addEventListener("click", function(e) {
         e.preventDefault();
