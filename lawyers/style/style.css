@@ -22,12 +22,29 @@ body {
 }
 
 .main-header {
+  position: relative;
   padding-bottom: 80px;
   color: #fff;
 
   background: url("../img/header-bg.jpg") no-repeat center;
   background-size: cover;
+}
 
+.main-header::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(1, 22, 64, 0.8);
+}
+
+@media(min-width: 600px) {
+  .main-header::after {
+    height: 40%;
+  }
 }
 
 .main-nav {
@@ -38,19 +55,26 @@ body {
   position: relative;
 }
 
-.nav-span {
+/* .main-nav-logo {
   display: none;
+} */
+
+.nav-span {
+  display: block;
   padding: 20px;
 
   font-size: 18px;
   line-height: 18px;
+
+  opacity: 0;
 }
 
 .nav-span-active {
-  display: block;
+  opacity: 100%;
 }
 
 @media(min-width: 960px) {
+  .nav-span,
   .nav-span-active {
     display: none;
   }
@@ -91,6 +115,7 @@ body {
 
 .nav-toggle {
   position: absolute;
+  z-index: 4;
   top: 18px;
   right: 0;
   display: block;
@@ -144,25 +169,29 @@ body {
 }
 
 .main-nav-items {
+  position: absolute;
+  z-index: 3;
+  top: -100em;
+  width: 100vw;
   margin: 0;
   padding: 0;
 
   list-style: none;
+  background: rgba(0, 0, 0, 0.8);
+  transition: top 0.2s;
 }
 
-.main-nav-item {
-  display: none;
-}
 
-
-.main-nav-items-active .main-nav-item {
-  display: block;
+.main-nav-items-active {
+  top: 0;
+  left: -14%;
 }
 
 .main-nav-item a {
   display: block;
-  width: 50%;
+  width: 70%;
   padding: 20px;
+  padding-left: 40px;
 
   font-size: 18px;
   color: #D2D2D9;
@@ -190,16 +219,20 @@ body {
 
 @media(min-width: 960px) {
   .main-nav-items {
+    position: static;
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: auto;
     max-width: 900px;
     margin: 0 auto;
+    background: none;
   }
 
-  .main-nav-item {
-    display: block;
+  .main-nav > .nav-span-active {
+    display: none;
   }
 
   .main-nav-item {
@@ -211,6 +244,7 @@ body {
     width: auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 20px;
   }
 }
 
@@ -219,12 +253,13 @@ body {
   margin-top: 200px;
   margin-bottom: 30px;
 
-  font-size: 26px;
+  font-size: 32px;
   font-weight: lighter;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
+
 .main-nav-par {
   margin: 0;
   margin-bottom: 100px;
@@ -244,6 +279,10 @@ body {
   }
 }
 
+.title-wrapp {
+  position: relative;
+  z-index: 2;
+}
 
 .header-btn-wrapp {
   max-width: 400px;
@@ -263,6 +302,7 @@ body {
 
   font-size: 14px;
   color: #000;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -274,7 +314,12 @@ body {
   transition: background-color 0.3s;
 }
 
+.header-btn-wrapp > .btn {
+  padding: 30px 40px;
+}
+
 .btn:hover {
+  color: #fff;
   background-color: #BF4539;
 }
 
@@ -285,7 +330,7 @@ body {
 .btn-tg::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 25px;
   left: 12px;
   width: 25px;
   height: 25px;
@@ -296,12 +341,17 @@ body {
 .btn-wp::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 25px;
   left: 12px;
   width: 25px;
   height: 25px;
   background: url("../img/whatsapp.png") no-repeat center;
   background-size: cover;
+}
+
+.btn-cta {
+  color: #fff;
+  background-color: #29A683;
 }
 
 @media(min-width: 1000px) {
@@ -315,7 +365,7 @@ body {
   }
 
   .btn {
-    width: 280px;
+    width: 290px;
   }
 }
 
@@ -469,6 +519,7 @@ body {
 
 .services-item li .btn {
   background-color: #bf4539;
+  color: #fff;
 }
 
 .services-item li .btn:hover {
@@ -499,6 +550,7 @@ body {
   margin: 0;
   margin-bottom: 100px;
 
+  line-height: 1.5em;
   text-align: center;
 }
 
@@ -623,20 +675,26 @@ body {
   font-size: 40px;
 }
 
-.contacts {
+.recall {
   padding-top: 100px;
   color: #fff;
   background-color: rgba(1, 22, 64, 0.8);
 }
 
-.contacts-title {
+.recall-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 40px;
   font-weight: lighter;
   text-align: center;
 }
 
+.recall-par {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/*
 .img-cont {
   width: 150px;
   margin: 0 auto;
@@ -656,6 +714,77 @@ body {
 .contacts .btn-tg::before,
 .contacts .btn-wp::before {
   left: 40px;
+} */
+
+.lead-form {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.lead-form label {
+  display: block;
+}
+
+.lead-form label input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  margin-bottom: 17px;
+
+  font-weight: lighter;
+  color: #000;
+  border-radius: 6px;
+  border: none;
+}
+
+.lead-form label input:focus {
+  outline: 2px solid #bf4539;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 17px;
+
+  text-transform: uppercase;
+  color: #fff;
+
+  background: #29A683;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lead-form select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.lead-form select:focus {
+  outline: 2px solid #bf4539;
+}
+
+
+.btn-submit:focus,
+.btn-submit:hover {
+  background: #bf4539;
+}
+
+.recall-btn-wrapp > .btn {
+  padding: 30px 40px;
 }
 
 .socials {
@@ -710,10 +839,57 @@ body {
 
 footer {
   padding: 20px 0;
-  background-color: #D2D5D9;
+  background-color: #15161b;
+  color: #fff;
 }
 
-footer h2 {
-  margin: 0;
-  margin-bottom: 30px;
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-par {
+  line-height: 2em;
+}
+
+.footer-par a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-par a:hover {
+  text-decoration: underline;
+}
+
+.footer-par .footer-wp {
+  color: #25D366;
+}
+
+.footer-par .footer-tg {
+  color: #34B7F1;
+}
+
+.const-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  display: block;
+  width: 80px;
+  height: 80px;
+
+  font-size: 0;
+
+  background-image: url('../img/contact-mail.png');
+  background-color: #29A683;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.const-btn:hover {
+  transform: scale(1.04);
 }
