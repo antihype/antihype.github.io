@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Око Государево</title>
     <meta name="description" content="Опытный военный юрист во Владивостоке. Консультации по военному праву, помощь в спорах, защита прав военнослужащих и контрактной службы.">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,8 +44,8 @@
             <p class="main-nav-par">Юридическая компания по военному праву</p>
             <div class="header-btn-wrapp">
               <a class="btn btn-cta" href="#recall-title">Оставить заявку</a>
-              <a class="btn btn-wp" href="#">Консультация в whatsapp</a>
-              <a class="btn btn-tg" href="#">Консультация в telegram</a>
+              <a class="btn btn-wp" href="https://wa.clck.bar/79146909469">Консультация в whatsapp</a>
+              <a class="btn btn-tg" href="https://t.me/+79146909469">Консультация в telegram</a>
             </div>
           </div>
         </div>
@@ -176,9 +176,9 @@
       <h2 id="contact-us" class="recall-title">Связаться с нами</h2>
       <p class="recall-par">Вы можете связаться с нами напрямую:</p>
       <div class="recall-btn-wrapp">
-        <a class="btn" href="#">+7 914 690 94-69</a>
-        <a class="btn btn-wp" href="#">Консультация в whatsapp</a>
-        <a class="btn btn-tg" href="#">Консультация в telegram</a>
+        <a class="btn" href="tel:+79146909469">+7 914 690 94-69</a>
+        <a class="btn btn-wp" href="https://wa.clck.bar/79146909469">Консультация в whatsapp</a>
+        <a class="btn btn-tg" href="https://t.me/+79146909469">Консультация в telegram</a>
       </div>
           </div>
           <ul class="socials">
@@ -195,9 +195,9 @@
           <img class="logo" width="175" height="135" src="img/logo.png" alt="Око Государево">
         </div>
         <p class="footer-par">Контакты:<br>
-            <a href="#">+7 914 690 94-69</a><br>
-                <a class="footer-wp" href="#">Whatsapp</a><br>
-                <a class="footer-tg" href="#">Telegram</a><br>
+            <a href="tel:+79146909469">+7 914 690 94-69</a><br>
+                <a class="footer-wp" href="https://wa.clck.bar/79146909469">Whatsapp</a><br>
+                <a class="footer-tg" href="https://t.me/+79146909469">Telegram</a><br>
                 <a href="#">@gmail.com</a><br>
         </p>
       </div>
@@ -209,6 +209,9 @@
       var items = document.querySelector(".main-nav-items");
       var span = document.querySelector(".nav-span");
       var nav = document.querySelector(".main-nav");
+
+      var header = document.querySelector(".main-header");
+      var constbtn = document.querySelector(".const-btn");
 
       span.addEventListener("click", function(e) {
         e.preventDefault();
@@ -237,6 +240,25 @@
           span.classList.add("nav-span-active")
         }
       });
+
+      var observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        console.log('Элемент появился в поле зрения!');
+        constbtn.classList.remove("const-btn-active");
+        } else {
+          console.log('Элемент ушёл из видимости');
+          constbtn.classList.add("const-btn-active");
+        }
+      });
+        }, {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+        });
+        observer.observe(nav);
+
+
     </script>
   </body>
 </html>
