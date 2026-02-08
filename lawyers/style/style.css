@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
@@ -518,6 +524,7 @@ body {
 }
 
 .services-item li .btn {
+  width: 100%;
   background-color: #bf4539;
   color: #fff;
 }
