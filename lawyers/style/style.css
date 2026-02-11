@@ -283,7 +283,7 @@ body {
   margin-bottom: 100px;
 
   color: #D2D5D9;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -1072,4 +1072,5 @@ footer .container {
   background: url("../img/point.png") no-repeat center;
   background-size: cover;
 }
+
 
