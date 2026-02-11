@@ -5,7 +5,9 @@ html, body {
 }
 
 body {
+  height: 100%;
   font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
 }
 
 .visually-hidden {
@@ -307,12 +309,13 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
 
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  vertical-align: bottom;
 
   background-color: #D2D5D9;
   padding: 20px 40px;
@@ -322,7 +325,7 @@ body {
 }
 
 .header-btn-wrapp > .btn {
-  padding: 30px 40px;
+  padding: 28px 40px;
 }
 
 .btn:hover {
@@ -337,8 +340,8 @@ body {
 .btn-tg::before {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 12px;
+  top: 28px;
+  left: 35px;
   width: 25px;
   height: 25px;
   background: url("../img/telegram.png") no-repeat center;
@@ -348,8 +351,8 @@ body {
 .btn-wp::before {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 12px;
+  top: 28px;
+  left: 35px;
   width: 25px;
   height: 25px;
   background: url("../img/whatsapp.png") no-repeat center;
@@ -371,8 +374,16 @@ body {
     flex-wrap: wrap;
   }
 
-  .btn {
+  .header-btn-wrapp > .btn {
     width: 290px;
+
+    font-size: 14px;
+  }
+
+  .header-btn-wrapp > .btn-wp::before,
+  .header-btn-wrapp > .btn-tg::before {
+    top: 24px;
+    left: 14px;
   }
 }
 
@@ -845,6 +856,15 @@ body {
   background-size: 80%;
 }
 
+.social-icon-unactive {
+  opacity: 0.6;
+}
+
+.social-icon-unactive:hover {
+  border-color: #fff;
+  transform: none;
+}
+
 footer {
   padding: 20px 0;
   background-color: #15161b;
@@ -853,8 +873,13 @@ footer {
 
 footer .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.footer-logo {
+  margin-right: 40px;
 }
 
 .footer-par {
@@ -863,11 +888,11 @@ footer .container {
 
 .footer-par a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .footer-par a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-par .footer-wp {
@@ -904,4 +929,137 @@ footer .container {
 
 .const-btn:hover {
   transform: scale(1.04);
+}
+
+.inner-page {
+  color: #fff;
+  background: rgba(1, 22, 64, 0.8) url("../img/header-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.breadcrumbs {
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.breadcrumbs ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs a {
+  position: relative;
+  display: block;
+  width: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  margin-right: 35px;
+
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+
+  transition: color 0.2s;
+}
+
+.breadcrumbs a::after {
+  content: ">";
+  position: absolute;
+  right: -35px;
+  color: #fff;
+}
+
+.breadcrumbs a:hover::after {
+  color: #fff;
+}
+
+
+.breadcrumbs a:active,
+.breadcrumbs a:hover {
+  color: #BF4539;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #BF4539;
+  text-decoration: none;
+}
+
+.breadcrumbs .active {
+  color: #bf4539;
+  opacity: 0.6;
+}
+
+.breadcrumbs .active::after {
+  content: "";
+}
+
+.breacrumbs .active:hover,
+.breacrumbs .active:active {
+  color: #bf4539;
+}
+
+
+.inner-section h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 5px;
+
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.inner-page footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.posts {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  list-style: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.posts li {
+  margin-bottom: 40px;
+}
+
+.posts li a {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+
+  font-weight: lighter;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+  color: #fff;
+}
+
+.posts li a:hover {
+  color: #bf4539;
+  text-decoration: none;
+}
+
+.posts li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+  width: 20px;
+  height: 20px;
+
+  background: url("../img/point.png") no-repeat center;
+  background-size: cover;
 }
