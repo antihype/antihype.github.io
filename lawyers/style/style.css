@@ -226,6 +226,16 @@ body {
   text-decoration: none;
 }
 
+.main-nav-item-unactive a {
+  opacity: 0.6;
+}
+
+.main-nav-item-unactive a:hover,
+.main-nav-item-unactive a:active {
+  color: #D2D2D9;
+  text-decoration: none;
+}
+
 @media(min-width: 960px) {
   .main-nav-items {
     position: static;
